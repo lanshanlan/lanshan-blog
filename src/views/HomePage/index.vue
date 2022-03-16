@@ -1,6 +1,8 @@
 <template>
-  <div>{{ name }}</div>
-  <div>{{ websiteName }} 欢迎您，{{ username}}</div>
+  <main class="main-container">
+    <div>{{ name }}</div>
+    <div>{{ websiteName }} 欢迎您，{{ username}}</div>
+  </main>
 </template>
 
 <script>
@@ -21,3 +23,9 @@ export default{
   }
 }
 </script>
+<style lang="less">
+.main-container {
+  text-align: center;
+  padding: 2.4rem 0;
+}
+</style>

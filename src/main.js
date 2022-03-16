@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import less from 'less'
 import { router } from './router'
 import { store } from './vuex/index'
 import { Button, message } from 'ant-design-vue'
@@ -9,6 +10,7 @@ app.config.productionTip = false;
 
 app.use(router)
 .use(store)
+.use(less)
 .use(Button)
 .mount('#app')
 

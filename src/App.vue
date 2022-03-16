@@ -1,13 +1,26 @@
 <template>
-  <router-view />
+  <a-layout>
+    <a-layout-header>
+      <Header />
+    </a-layout-header>
+    <a-layout-content class="main-container">
+      <router-view />
+    </a-layout-content>
+    <a-layout-footer>
+      <Footer />
+    </a-layout-footer>
+  </a-layout>
 </template>
 
 <script>
-
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 export default {
-  // name: 'App',
-  // components: {
-  // }
+  name: 'App',
+  components: {
+    Header,
+    Footer
+  }
 }
 </script>
 
@@ -16,8 +29,17 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  background-color: rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+  overflow: auto;
+}
+html {
+  font-size: 10px;
+}
+.main-container {
+  min-height: calc(100vh - 12rem);
 }
 </style>
