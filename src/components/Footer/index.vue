@@ -1,6 +1,6 @@
 <template>
   <footer class="main-footer">
-    <div class="copyright">Copyright © 2011-2022</div>
+    <div class="copyright">Copyright © 2022-2022</div>
   </footer>
 </template>
 <script>
@@ -12,6 +12,7 @@ export default {
 .main-footer {
   text-align: center;
   padding: 0 5rem;
+  height: 6rem;
   .copyright {
     // text-align: center;
   }

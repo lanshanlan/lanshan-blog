@@ -1,0 +1,26 @@
+html {
+  font-size: 10px;
+}
+.main-container {
+  min-height: calc(100vh - 12rem);
+}
+ul {
+  padding: 0;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.ellipsis-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.ellipsis-2 {
+  .ellipsis-1();
+  -webkit-line-clamp: 2;
+}

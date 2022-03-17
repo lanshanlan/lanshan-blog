@@ -1,12 +1,12 @@
 <template>
   <main class="main-container">
-    <div>{{ name }}</div>
-    <div>{{ websiteName }} 欢迎您，{{ username}}</div>
+    <ScrollList />
   </main>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
+import ScrollList from './ScrollList'
 
 export default{
   name: 'HomePage',
@@ -14,6 +14,9 @@ export default{
     return {
       name: '首页'
     }
+  },
+  components: {
+    ScrollList,
   },
   computed: {
     ...mapGetters({
@@ -23,7 +26,7 @@ export default{
   }
 }
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .main-container {
   text-align: center;
   padding: 2.4rem 0;

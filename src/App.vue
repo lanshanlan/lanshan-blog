@@ -13,8 +13,10 @@
 </template>
 
 <script>
+import "./index.less"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+
 export default {
   name: 'App',
   components: {
@@ -35,11 +37,5 @@ export default {
   background-color: rgba(0, 0, 0, 0.1);
   min-height: 100vh;
   overflow: auto;
-}
-html {
-  font-size: 10px;
-}
-.main-container {
-  min-height: calc(100vh - 12rem);
 }
 </style>
